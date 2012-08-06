@@ -1,0 +1,10 @@
+--- origsrc/Physics-10/olpcgames/activity.py	2012-05-26 03:45:52.000000000 -0500
++++ src/Physics-10/olpcgames/activity.py	2012-08-05 22:39:13.544258500 -0500
+@@ -167,7 +167,6 @@ class PygameActivity(activity.Activity):
+             self._pgc.connect_game(self.game_handler or self.game_name)
+             # XXX Bad coder, do not hide in a widely subclassed operation
+             # map signal does not appear to show up on socket instances
+-            gtk.gdk.threads_init()
+             return self._pgc
+         else:
+             import hippo
